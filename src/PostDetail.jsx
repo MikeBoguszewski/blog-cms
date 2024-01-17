@@ -71,7 +71,7 @@ export default function PostDetail() {
         </button>
         <br />
         <time>{format(new Date(postInfo.updatedAt), "yyyy-MM-dd")}</time>
-        <p className="content">{decodedContent}</p>
+        <div className="content" dangerouslySetInnerHTML={decodedContent}></div>
       </div>
       <div className="comments-container">
         <h2>{comments.length} Comments</h2>
