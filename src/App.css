@@ -1,0 +1,199 @@
+:root {
+  --dark-moss-green: #606c38ff;
+  --pakistan-green: #283618ff;
+  --cornsilk: #fefae0ff;
+  --earth-yellow: #dda15eff;
+  --tigers-eye: #bc6c25ff;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("/assets/fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #fefae0;
+  font-family: "OpenSans", sans-serif;
+  width: 100vw;
+  background: linear-gradient(to top, #667748, #505c33);
+  background-repeat: no-repeat;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bc6c25;
+  padding: 20px;
+  height: 60px;
+}
+header a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: inherit;
+  font-weight: bold;
+}
+header a.logo {
+  font-size: 1.7rem;
+}
+/* Login page */
+form.login-form {
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.login-container {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #283618, #102d10);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 500px;
+  width: 400px;
+  padding: 20px;
+}
+div.login-container input {
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+}
+div.login-container button {
+  align-self: center;
+  height: 40px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: none;
+  font-weight: bold;
+  width: 90px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+/* Posts page */
+div.posts {
+  min-height: calc(100vh - 60px);
+  padding: 80px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 80px;
+  justify-content: center;
+}
+div.posts-container a.new-post {
+  margin-left: 80px;
+  margin-top: 40px;
+  display: inline-block;
+  height: 40px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: none;
+  font-weight: bold;
+  width: 100px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+}
+div.posts a.post {
+  text-align: center;
+  height: 350px;
+  padding: 20px;
+  line-height: 2rem;
+  background: linear-gradient(to bottom, #283618, #102d10);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.8;
+  position: relative;
+}
+div.posts a.post:hover {
+  opacity: 1;
+}
+div.posts a.post h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+div.posts a.post p.published {
+  font-weight: bold;
+}
+div.posts a.post button {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+form.post-form {
+  min-height: calc(100vh - 60px);
+  background-color: #ffffff;
+}
+form.post-form input {
+  display: inline-block;
+  min-width: 400px;
+  padding: 8px;
+  margin: 15px;
+}
+div.ql-container {
+  height: 500px;
+}
+div.quill {
+  margin: 15px;
+  color: #283618ff;
+}
+
+/* Post detail page */
+div.post-detail {
+  color: #102d10;
+  padding-top: 10px;
+  height: calc(100vh - 60px);
+  background-color: #ffffff;
+}
+div.post-detail div.info {
+  height: calc(100vh - 240px);
+  text-align: center;
+}
+div.post-detail div.info p.content {
+  text-align: start;
+  padding: 30px;
+}
+div.post-detail div.info h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.comments-container {
+  padding: 30px;
+}
+div.comments-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+div.comments-container form textarea {
+  font: inherit;
+  margin-top: 10px;
+  resize: none;
+}
+div.comments-container form button {
+  font: inherit;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #bc6c25;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
+}
+div.comments-container div.comment {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
