@@ -11,7 +11,6 @@ export default function Post({ content, published, title, updatedAt, _id }) {
         <p className="published">{published ? "Published" : "Unpublished"}</p>
         <br />
         <time>{format(new Date(updatedAt), "yyyy-MM-dd")}</time>
-        <div dangerouslySetInnerHTML={{ __html: decodedContent }}></div>
       </Link>
     </>
   );
